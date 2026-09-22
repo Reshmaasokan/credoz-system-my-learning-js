@@ -1,0 +1,9 @@
+let i=5
+console.log(i)  //==>5
+console.log(i++)  //==>5
+console.log(i)  //==>6
+console.log(++i)  //==>7
+console.log(i)  //==>7
+console.log(i--)  //==>7
+console.log(--i)  //==>5
+console.log(i)  //==>5
