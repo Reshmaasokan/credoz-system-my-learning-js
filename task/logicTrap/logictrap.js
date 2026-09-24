@@ -1,0 +1,4 @@
+function logictrap(value){
+
+}
+logictrap
