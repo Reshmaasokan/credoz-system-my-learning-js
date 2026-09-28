@@ -4,11 +4,11 @@ const employee = {
 
     calculate: function() {
 
-        let hra = this.salary * 20 / 100;
-        let da = this.salary * 10 / 100;
-        let sa = this.salary * 5 / 100;
+        let hra = this.salary * 25 / 100;
+        let da = this.salary * 20 / 100;
+        let sa = this.salary * 10 / 100;
         let pf = this.salary * 12 / 100;
-        let pt = 200;
+        let pt = this.salary * 3 / 100;
 
         this.currentsalary =
             this.salary - hra - da - sa - pf - pt;
@@ -19,7 +19,7 @@ const employee = {
         console.log("SA:", sa);
         console.log("PF:", pf);
         console.log("PT:", pt);
-        console.log("Remaining Salary:", this.currentsalary);
+        console.log("Remaining Amt:", this.currentsalary);
     }
 };
 
