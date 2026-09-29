@@ -9,7 +9,6 @@ function offer(){
     if(today>=offerStart && today<=offerEnd){
         var discountAmt=discount/100*price
         var final=price-discountAmt
-        
         console.log("Product Name==>",product)
         console.log("Actual Price===>",price)
         console.log("Discount===>",discount,"%")
