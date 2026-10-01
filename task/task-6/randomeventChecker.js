@@ -1,8 +1,13 @@
-let today=new Date()
-console.log(today.getDate())
-let nextDays=new Date("2026-10-10")
-let difference=nextDays-today
-console.log(difference)
-let raandom=Math.random()*difference
-let randomDtae=new Date(today.getTime()+raandom)
-console.log(randomDtae)
+function eventfn(){
+    let today=new Date();
+    let endDay=new Date()
+    endDay.setDate(today.getDate()+10)
+    let difference=endDay.getTime()-today.getTime()
+    let randomTime=Math.random()*difference
+    let randomDate=new Date(today.getTime()+randomTime)
+    console.log("Today",today.getDate())
+    console.log("End Date",endDay.getDate())
+    console.log("Random Date",randomDate.getDate())
+
+}
+eventfn()
