@@ -1,3 +1,4 @@
+
 var promise=new Promise((resolve,reject)=>{
     let age=28
     if(age>=18){
@@ -18,3 +19,5 @@ promise.then(
         console.log("Error===>",error)
     }
 )
+
+
