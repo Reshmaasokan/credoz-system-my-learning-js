@@ -57,20 +57,22 @@ function dtautilty(){
     {firstname:"Preethi",lastname:"Ravi",age:22,occupacation:{working:"doctor",status:"active"},location:"Madhurai"}]
 
 
-var full=users.map((value)=>{
-    value.fullname=value.firstname+value.lastname
-    return value
-} 
-)
-full.sort()
-
-var filteractive=full.filter((value)=>{
+var filteractive=users.filter((value)=>{
     if(value.occupacation.status=="active"){
         return value
     }
 })
 
-console.log("Active profession users",filteractive)
+var full=filteractive.map((value)=>{
+    value.fullname=value.firstname+value.lastname
+    return value.fullname
+} 
+)
+full.sort()
+
+
+
+console.log("Active profession users",full)
 
 }
 dtautilty()
