@@ -69,7 +69,7 @@ function time(){
 
     }
  ]
- console.log(student[1].skillset,student[1].name)
+ console.log(student[1].name,student[1].skillset)
 }
 
 time()
