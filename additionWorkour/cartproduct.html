@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title> 
+    </head>
+    <body>
+        <form onsubmit="prevent(event)">
+            <label for="cart" >Enter the product name</label>
+            <input type="text" id="cart">
+            <button id="addbtn" type="submit" onsubmit="addproduct()">Add to cart</button>
+            <button id="removebtn" type="submit" onsubmit="removeproduct()">Remove product</button>
+        </form>
+        
+        <p class="message"></p>
+        <p class="result"></p>
+        <script src="./cartproduct.js"></script>
+    </body>
+</html>

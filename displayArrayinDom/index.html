@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title> Array Display </title>
+</head>
+
+<body>
+    <form onsubmit="eventpreventer(event)">
+            <label for="inputt"> Enter the fruit</label>
+                <input type="text" id="inputt">
+                <button type="submit" id="btn">submit</button>
+                
+    </form>
+
+    <form onsubmit="removeFruit(event)">
+            <label for="removeInput"> Enter the fruit to remove</label>
+                <input type="text" id="removeInput">
+                <button type="submit">Remove Fruit</button>
+                
+    </form>
+    <p id="result"></p>
+    <p id="message"></p>
+    <script src="./index.js"></script>
+</body>
+
+</html>
